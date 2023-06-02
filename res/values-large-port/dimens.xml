@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_ads">96.0dip</dimen>
+    <dimen name="height_item_film">225.0dip</dimen>
+    <dimen name="width_item_film">152.0dip</dimen>
+</resources>

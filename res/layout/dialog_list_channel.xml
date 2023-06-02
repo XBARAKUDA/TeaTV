@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_primary_light" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/vLink" android:background="@drawable/search_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imgLink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/baseline_link_white_24dp" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/play_link" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Play Link" android:layout_toRightOf="@id/imgLink" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/vTeatv" android:background="@drawable/search_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imgTeatv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/baseline_sd_storage_white_24dp" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/import_teatv" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Import m3u from TeaTV" android:layout_toRightOf="@id/imgTeatv" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/vStorate" android:background="@drawable/search_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imgStorage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/baseline_sd_storage_white_24dp" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/import_disk" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_from_disk" android:layout_toRightOf="@id/imgStorage" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/vCloud" android:background="@drawable/search_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imgCloud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/baseline_cloud_download_white_24dp" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/import_network" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_from_internet" android:layout_toRightOf="@id/imgCloud" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/vCancel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tvCancel" android:background="@drawable/search_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="true" />
+    </RelativeLayout>
+</LinearLayout>

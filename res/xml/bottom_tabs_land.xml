@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab activeColor="#ffe68a00" badgeBackgroundColor="#ff26313f" barColorWhenSelected="#ff26313f" icon="@drawable/ic_library_books_yell_24dp" id="@id/tab_new_movies" inActiveColor="#ff808080" />
+    <tab activeColor="#ffe68a00" badgeBackgroundColor="#ff26313f" barColorWhenSelected="#ff26313f" icon="@drawable/ic_movie_white_24dp" id="@id/tab_movies" inActiveColor="#ff808080" />
+    <tab activeColor="#ffe68a00" badgeBackgroundColor="#ff26313f" barColorWhenSelected="#ff26313f" icon="@drawable/ic_live_tv_white_24dp" id="@id/tab_tvshows" inActiveColor="#ff808080" />
+    <tab activeColor="#ffe68a00" badgeBackgroundColor="#ff26313f" barColorWhenSelected="#ff26313f" icon="@drawable/ic_history_yell_24dp" id="@id/tab_favourite" inActiveColor="#ff808080" />
+    <tab activeColor="#ffe68a00" badgeBackgroundColor="#ff0d0d0d" barColorWhenSelected="#ff0d0d0d" icon="@drawable/ic_blur_circular_white_24dp" id="@id/tab_" inActiveColor="#ff808080" title="Live TV" />
+</tabs>

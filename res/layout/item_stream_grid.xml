@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/vOption" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="@dimen/width_item_stream" android:layout_height="@dimen/width_item_stream" android:foreground="@drawable/item_film_focus" android:layout_centerHorizontal="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <de.hdodenhof.circleimageview.CircleImageView android:id="@id/circleview" android:layout_width="@dimen/width_item_circle" android:layout_height="@dimen/width_item_circle" android:layout_centerInParent="true" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tvFirstName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:textAllCaps="true" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/thumbnailGrid" android:background="@color/background_primary" android:layout_width="@dimen/width_item_stream" android:layout_height="@dimen/width_item_stream" />
+            <ImageView android:id="@id/imgCheck" android:background="@color/black" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_check_circle_grey_300_24dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <com.ctrlplusz.anytextview.AnyTextView android:textSize="12.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/nameGrid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:lines="1" android:layout_below="@id/card" android:layout_centerInParent="true" app:typeface="@string/typeface_primary_bold" />
+</RelativeLayout>

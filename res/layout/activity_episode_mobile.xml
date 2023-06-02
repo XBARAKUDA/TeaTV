@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_primary_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/background_primary_light" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+            <ImageView android:id="@id/imgBack" android:background="@drawable/search_focus" android:padding="10.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_back_white_24dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tvNameSeason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_toRightOf="@id/imgBack" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/bannerContainer" android:background="@color/background_primary_light" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <ListView android:id="@id/lvEpisode" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/search_focus_grid" android:drawSelectorOnTop="false" android:layout_above="@id/bannerContainer" android:layout_alignParentTop="true" android:overScrollMode="never" />
+            <ProgressBar android:theme="@style/ProgressPlayer" android:id="@id/loading" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminate="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

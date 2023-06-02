@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@color/background_primary_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/recent_title" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Recent" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/lvStreamRecent" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:layout_below="@id/recent_title" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/favorite_title" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Favorite" android:layout_below="@id/lvStreamRecent" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/lvFavorite" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:layout_below="@id/favorite_title" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/playlist_title" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TeaTV group" android:layout_below="@id/lvFavorite" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/lvChannel" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:layout_below="@id/playlist_title" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/user_title" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="User group" android:layout_below="@id/lvChannel" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/lvUser" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:layout_below="@id/user_title" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vEmptyChanel" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tvTitleEmpty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Playlist is Selected" />
+            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvContentEmpty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="@string/content_empty" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

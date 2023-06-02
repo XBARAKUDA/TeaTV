@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_primary" android:paddingTop="?actionBarSize" android:layout_width="?actionBarSize" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/vDiscover" android:background="@drawable/search_focus" android:padding="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize">
+        <ImageView android:id="@id/imgDiscover" android:background="@drawable/item_discover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/vMovies" android:background="@drawable/search_focus" android:padding="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imgMovies" android:background="@drawable/item_movies" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/vTvShow" android:background="@drawable/search_focus" android:padding="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imgTvshow" android:background="@drawable/item_tv_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/vAnime" android:background="@drawable/search_focus" android:padding="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imgAnime" android:background="@drawable/item_anime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

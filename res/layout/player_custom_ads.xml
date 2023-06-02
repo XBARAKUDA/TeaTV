@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/photo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/imgCloseAdsPhoto" android:background="@color/background_primary_alpha_25" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_clear_white_24dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <com.teamseries.lotus.videoads.EasyVideoPlayer android:id="@id/playerCustomAds" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" app:evp_disableControls="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/vAdsOptions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/vAds" android:background="@color/white_90" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="0.0dip" android:layout_height="72.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="24.0dip" android:layout_weight="0.7" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/imgIcon" android:background="@android:color/transparent" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tvInstall" android:background="@drawable/selector_watch_now" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="Install" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toLeftOf="@id/tvInstall" android:layout_toRightOf="@id/imgIcon" android:layout_centerVertical="true">
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/tvTitleAds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="1" />
+                <RatingBar android:id="@id/ratingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:isIndicator="false" style="?android:ratingBarStyleSmall" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/vGoolgePlay" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_chplay" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/gray70" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="Google Play" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginBottom="24.0dip" android:layout_weight="0.3" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tvCount" android:paddingRight="24.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/vSkip" android:background="@drawable/selector_tabtitle" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tvSkip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Skip Ads" android:layout_centerInParent="true" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/ic_skip_next_white_36dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

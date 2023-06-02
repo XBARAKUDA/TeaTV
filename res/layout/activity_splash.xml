@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background_primary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/splashicon" android:layout_width="84.0dip" android:layout_height="84.0dip" android:src="@drawable/ic_splash" android:layout_centerInParent="true" />
+    <com.ctrlplusz.anytextview.AnyTextView android:textSize="28.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_below="@id/splashicon" android:layout_centerHorizontal="true" app:typeface="@string/typeface_primary" />
+    <com.ctrlplusz.anytextview.AnyTextView android:textSize="13.0sp" android:textStyle="normal" android:textColor="@color/text_color" android:id="@id/tvVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:typeface="@string/typeface_primary" />
+</RelativeLayout>

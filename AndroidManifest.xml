@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="com.teamseries.lotus" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <permission android:description="@string/permdesc_downloadManager" android:label="@string/permlab_downloadManager" android:name="com.mozillaonline.downloads.com.teamseries.ACCESS_DOWNLOAD_MANAGER" android:protectionLevel="normal"/>
+    <permission android:description="@string/permdesc_downloadManagerAdvanced" android:label="@string/permlab_downloadManagerAdvanced" android:name="com.mozillaonline.downloads.com.teamseries.ACCESS_DOWNLOAD_MANAGER_ADVANCED" android:protectionLevel="normal"/>
+    <permission android:description="@string/permdesc_downloadCompletedIntent" android:label="@string/permlab_downloadCompletedIntent" android:name="com.mozillaonline.downloads.com.teamseries.SEND_DOWNLOAD_COMPLETED_INTENTS" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.mozillaonline.downloads.com.teamseries.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="com.mozillaonline.downloads.com.teamseries.ACCESS_DOWNLOAD_MANAGER_ADVANCED"/>
+    <uses-permission android:name="com.mozillaonline.downloads.com.teamseries.SEND_DOWNLOAD_COMPLETED_INTENTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.WRITE_GSERVICES"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/logotv" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:logo="@drawable/logotv" android:name="com.teamseries.lotus.TeaMovieApplication" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:banner="@drawable/logotv" android:logo="@drawable/logotv" android:name="com.teamseries.lotus.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name="com.teamseries.lotus.WebCookieActivity"/>
+        <activity android:name="com.teamseries.lotus.CalendarActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.NotificationActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.model.stream.PlayerActivity" android:screenOrientation="sensorLandscape" android:theme="@style/PlayerTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.teamseries.lotus.DetailCollectionActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.DetailActivityMobile" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.CastDetailActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.teamseries.lotus.LoginRealDebridMobileActivity" android:theme="@style/MainTheme"/>
+        <receiver android:name="com.teamseries.lotus.receiver.ReceiverUpdateRecent">
+            <intent-filter>
+                <action android:name="teatv.refresh.recent"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:name="com.teamseries.lotus.service.SyncRecentToDb"/>
+        <service android:enabled="true" android:exported="true" android:name="com.teamseries.lotus.service.GetSubService"/>
+        <provider android:authorities="com.teamseries.lotus.DataPlayProvider" android:exported="true" android:multiprocess="true" android:name="com.teamseries.lotus.player_provider.PlayerProvider"/>
+        <activity android:name="com.teamseries.lotus.download_pr.ui.DownloadListActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.UpdateActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.ListChannelActivity" android:theme="@style/MainTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.teamseries.lotus.LoginTraktActivity" android:theme="@style/MainTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.teamseries.lotus.LoginTraktLand" android:theme="@style/MainTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.teamseries.lotus.DonateActivity" android:theme="@style/MainTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.teamseries.lotus.LoginRealDebridActivity" android:theme="@style/MainTheme"/>
+        <provider android:authorities="com.mozillaonline.downloads.teamseries" android:name="com.teamseries.lotus.download_pr.DownloadProvider"/>
+        <service android:name="com.teamseries.lotus.download_pr.DownloadService"/>
+        <receiver android:exported="false" android:name="com.teamseries.lotus.download_pr.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.teamseries.lotus.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:name="com.teamseries.lotus.SeasonDetailsActivity" android:screenOrientation="sensorPortrait" android:theme="@style/MainTheme"/>
+        <activity android:hardwareAccelerated="true" android:name="com.teamseries.lotus.playerv2.PlayerActivityVer2" android:screenOrientation="sensorLandscape" android:theme="@style/PlayerTheme"/>
+        <activity android:name="com.teamseries.lotus.SearchDetailsActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.RecentActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.ChannelNetworkActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.lite_mote_ui.LiteModeSearchDetailActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.teamseries.lotus.lite_mote_ui.LiteModeLinkActivity"/>
+        <activity android:name="com.teamseries.lotus.lite_mote_ui.LiteModeDetailActivity"/>
+        <activity android:name="com.teamseries.lotus.lite_mote_ui.LiteModeActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.teamseries.lotus.DownloadMangerActivity"/>
+        <activity android:name="com.teamseries.lotus.GenreDetailsPagerActivity" android:theme="@style/MainTheme"/>
+        <service android:name="com.teamseries.lotus.download.DownloadService"/>
+        <service android:name="com.teamseries.lotus.service.SaveRecentService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.teamseries.lotus.CategoryActivity" android:theme="@style/MainTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.teamseries.lotus.SubtitleActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.SearchActivity" android:theme="@style/MainTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.teamseries.lotus.SettingActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.StreamActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.teamseries.lotus.LinkActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.WatchlistActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.CollectionTraktActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.TrailerActivity" android:screenOrientation="sensorLandscape" android:theme="@style/PlayerTheme"/>
+        <activity android:name="com.teamseries.lotus.MainActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.MainActivityNew" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.PlayerActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.teamseries.lotus.EpisodeActivity" android:screenOrientation="sensorLandscape" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.EpisodeMobileActivity" android:theme="@style/MainTheme"/>
+        <activity android:name="com.teamseries.lotus.DetailActivityLand" android:screenOrientation="sensorLandscape" android:theme="@style/MainTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.teamseries.lotus.FAQActivity"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.yanzhenjie.permission.PermissionActivity" android:theme="@style/permission_PermissionActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="pl.droidsonroids.casty.CastOptionsProvider"/>
+        <activity android:name="pl.droidsonroids.casty.ExpandedControlsActivity" android:theme="@style/Theme.CastVideosDark"/>
+        <receiver android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.teamseries.lotus.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+    </application>
+</manifest>

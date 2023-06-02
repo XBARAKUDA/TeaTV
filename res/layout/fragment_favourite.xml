@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background_primary_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <GridView android:gravity="center" android:id="@id/gridView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/search_focus_grid" android:drawSelectorOnTop="false" android:horizontalSpacing="2.0dip" android:verticalSpacing="8.0dip" android:numColumns="@integer/colum_movie_normal" android:overScrollMode="never" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <ProgressBar android:theme="@style/ProgressPlayer" android:id="@id/loading" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminate="true" android:layout_centerInParent="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <LinearLayout android:orientation="vertical" android:id="@id/vEmpty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.ctrlplusz.anytextview.AnyTextView android:textSize="16.0sp" android:textColor="@color/white_80" android:gravity="center" android:id="@id/tvTitleEmpty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="No data available!" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+</RelativeLayout>

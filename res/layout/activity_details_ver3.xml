@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <requestFocus />
+    <include layout="@layout/detail_nested" />
+    <RelativeLayout android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignParentTop="true">
+        <View android:id="@id/vAlpha" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+        <ImageView android:id="@id/imgBack" android:background="@drawable/search_focus" android:padding="10.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_back_white_24dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/imgSearch" android:background="@drawable/search_focus" android:padding="10.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search_white_24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <androidx.mediarouter.app.MediaRouteButton android:id="@id/media_route_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/imgSearch" android:layout_centerVertical="true" />
+        <com.ctrlplusz.anytextview.AnyTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tvNameToolbar" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/media_route_button" android:layout_toRightOf="@id/imgBack" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/vLoading" android:background="@color/background_primary" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:theme="@style/ProgressPlayer" android:id="@id/loading" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminate="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

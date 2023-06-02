@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card" android:background="@drawable/film_focus" android:padding="2.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="3.0dip" app:cardElevation="0.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.teamseries.lotus.widget.ImageViewRatio android:id="@id/thumbnailLn" android:layout_width="110.0dip" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:transitionName="image" app:ratioHeight="10.0" app:ratioWidth="7.0" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ctrlplusz.anytextview.AnyTextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:id="@id/nameLn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="Image 1" app:typeface="@string/typeface_primary" />
+        <com.ctrlplusz.anytextview.AnyTextView android:textAppearance="@style/TextAppearance.AppCompat.Small" android:id="@id/tv_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="20 likes · 33 comments" app:typeface="@string/typeface_primary" />
+    </LinearLayout>
+</LinearLayout>

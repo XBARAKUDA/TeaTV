@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/vBanner" android:layout_width="fill_parent" android:layout_height="170.0dip">
+                    <com.teamseries.lotus.widget.ViewPagerAutoScroll android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="170.0dip" />
+                    <com.rd.PageIndicatorView android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/vRecent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/vBanner">
+                    <RelativeLayout android:id="@id/top" android:paddingLeft="@dimen/space_grid" android:paddingRight="@dimen/space_grid" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip">
+                        <com.ctrlplusz.anytextview.AnyTextView android:textSize="17.0sp" android:textColor="@color/orange" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="16.0dip" android:text="Đang xem" android:layout_toLeftOf="@id/see_more" android:layout_centerVertical="true" app:typeface="@string/typeface_primary" />
+                        <com.ctrlplusz.anytextview.AnyTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/see_more" android:background="@drawable/selector_more_feature" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/more" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="false" app:typeface="@string/typeface_primary" />
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rcRecens" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/vRecent1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/vRecent">
+                    <RelativeLayout android:id="@id/top1" android:paddingLeft="@dimen/space_grid" android:paddingRight="@dimen/space_grid" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip">
+                        <com.ctrlplusz.anytextview.AnyTextView android:textSize="17.0sp" android:textColor="@color/orange" android:id="@id/name1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="16.0dip" android:text="Đang xem 2" android:layout_toLeftOf="@id/see_more1" android:layout_centerVertical="true" app:typeface="@string/typeface_primary" />
+                        <com.ctrlplusz.anytextview.AnyTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/see_more1" android:background="@drawable/selector_more_feature" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/more" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="false" app:typeface="@string/typeface_primary" />
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rcRecent1" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top1" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/vFeature" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/vRecent1" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</LinearLayout>

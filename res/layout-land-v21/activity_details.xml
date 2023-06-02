@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
+        <com.teamseries.lotus.widget.ImageViewRatio android:id="@id/imgCover" android:layout_width="fill_parent" android:layout_height="@dimen/image_thumb_details_height" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/scrollview" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+        <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/vTrans" android:layout_width="fill_parent" android:layout_height="160.0dip">
+                <com.teamseries.lotus.widget.ImageViewRatio android:id="@id/imgTrans" android:layout_width="fill_parent" android:layout_height="160.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/imgPlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play_arrow_white_48dp" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/vThumb" android:background="@color/background_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/vTrans">
+                <com.ctrlplusz.anytextview.AnyTextView android:textSize="18.0sp" android:textColor="@color/colorAccent" android:id="@id/tvName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="140.0dip" android:layout_marginTop="10.0dip" app:typeface="@string/typeface_primary" />
+                <RelativeLayout android:id="@id/vName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="140.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/tvName">
+                    <com.ctrlplusz.anytextview.AnyTextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/tvYear" android:layout_width="wrap_content" android:layout_height="wrap_content" app:typeface="@string/typeface_primary" />
+                    <com.ctrlplusz.anytextview.AnyTextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/tvImdb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" app:typeface="@string/typeface_primary" />
+                </RelativeLayout>
+                <LinearLayout android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="140.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/vName">
+                    <ImageView android:id="@id/imgFavourite" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_bookmark_white_24dp" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/imgTrailer" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_local_movies_white_24dp" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/imgShare" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_share_white_24dp" android:layout_weight="1.0" />
+                </LinearLayout>
+            </RelativeLayout>
+            <com.teamseries.lotus.widget.FrameLayoutRatio android:layout_width="@dimen/image_width_thumb" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="120.0dip" android:transitionName="profile" app:ratioHeight="10.0" app:ratioWidth="7.0">
+                <com.teamseries.lotus.widget.ImageViewRatio android:id="@id/thumbnail" android:background="@android:color/darker_gray" android:layout_width="@dimen/image_width_thumb" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" app:ratioHeight="10.0" app:ratioWidth="7.0" />
+                <com.ctrlplusz.anytextview.AnyTextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center|right|top" android:id="@id/tvUpdateEpisode" android:background="@color/colorAccent" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:typeface="@string/typeface_primary" />
+            </com.teamseries.lotus.widget.FrameLayoutRatio>
+            <LinearLayout android:orientation="vertical" android:background="@color/background_primary" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/vThumb">
+                <RelativeLayout android:id="@id/vDes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip">
+                    <com.ctrlplusz.anytextview.AnyTextView android:textColor="@color/white" android:id="@id/tvTitleDes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/description" app:typeface="@string/typeface_primary" />
+                    <com.ms.square.android.expandabletextview.ExpandableTextView android:id="@id/expand_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvTitleDes" expandableTextView:animDuration="200" expandableTextView:maxCollapsedLines="4"
+                      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:expandableTextView="http://schemas.android.com/apk/res-auto">
+                        <com.ctrlplusz.anytextview.AnyTextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/expandable_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" expandableTextView:typeface="@string/typeface_primary" />
+                        <ImageButton android:layout_gravity="bottom|center" android:id="@id/expand_collapse" android:background="@android:color/transparent" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </com.ms.square.android.expandabletextview.ExpandableTextView>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/vActor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip">
+                    <com.ctrlplusz.anytextview.AnyTextView android:textColor="@color/white" android:id="@id/tvTitleActor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/actor" app:typeface="@string/typeface_primary" />
+                    <com.ctrlplusz.anytextview.AnyTextView android:textColor="@color/colorAccent" android:id="@id/tvActor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvTitleActor" app:typeface="@string/typeface_primary" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/vCountry" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip">
+                    <com.ctrlplusz.anytextview.AnyTextView android:textColor="@color/white" android:id="@id/tvTitleCountry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/country" app:typeface="@string/typeface_primary" />
+                    <com.ctrlplusz.anytextview.AnyTextView android:textColor="@color/colorAccent" android:id="@id/tvCountry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvTitleCountry" app:typeface="@string/typeface_primary" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/vTotal" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ctrlplusz.anytextview.AnyTextView android:textColor="@color/white" android:id="@id/tvTitleTotalEpisode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/episode" app:typeface="@string/typeface_primary" />
+                    <com.ctrlplusz.anytextview.AnyTextView android:textColor="@color/colorAccent" android:id="@id/tvTotalEpisode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvTitleTotalEpisode" app:typeface="@string/typeface_primary" />
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rcEpisode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/vListSugges" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                    <com.ctrlplusz.anytextview.AnyTextView android:textColor="@color/colorAccent" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/related_movie" app:typeface="@string/typeface_primary" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rcSuggest" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignParentTop="true" app:contentInsetStart="0.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/vAlpha" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+            <ImageView android:id="@id/imgSearch" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search_white_24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/imgBack" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_back_white_24dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.ctrlplusz.anytextview.AnyTextView android:textColor="@color/white" android:id="@id/tvNameFToolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:maxLines="2" android:layout_toLeftOf="@id/imgSearch" android:layout_toRightOf="@id/imgBack" android:layout_centerVertical="true" app:typeface="@string/typeface_primary" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout android:orientation="vertical" android:id="@id/vError" android:background="@color/background_primary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <com.ctrlplusz.anytextview.AnyTextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvError" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/load_data_error" android:layout_centerInParent="true" app:typeface="@string/typeface_primary" />
+        <com.ctrlplusz.anytextview.AnyButton android:textSize="12.0sp" android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/btnTryAgain" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="8.0dip" android:text="@string/try_again" android:layout_below="@id/tvError" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:textAllCaps="false" app:typeface="@string/typeface_primary" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/vLoading" android:background="@color/background_primary" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:theme="@style/ProgressPlayer" android:id="@id/loading" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminate="true" android:layout_centerInParent="true"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </RelativeLayout>
+</RelativeLayout>

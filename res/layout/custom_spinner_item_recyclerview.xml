@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="120.0dip" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgSeason" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+    <com.ctrlplusz.anytextview.AnyTextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tvNameSeason" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="118.0dip" android:layout_height="38.0dip" android:layout_centerInParent="true" android:textAllCaps="true" />
+</RelativeLayout>

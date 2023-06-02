@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_primary_light" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/vImage" android:layout_width="@dimen/width_item_episode" android:layout_height="@dimen/height_item_episode" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/imgEpisode" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="@dimen/width_item_episode" android:layout_height="@dimen/height_item_episode" android:scaleType="fitXY" android:layout_centerVertical="true" />
+            <ProgressBar android:id="@id/percent" android:layout_width="fill_parent" android:layout_height="4.0dip" android:max="100" android:progressDrawable="@drawable/progress_bar_recent" android:layout_alignParentBottom="true" style="?android:progressBarStyleHorizontal" />
+        </RelativeLayout>
+        <ImageView android:id="@id/imgWatched" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/item_watched" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toLeftOf="@id/imgWatched" android:layout_toRightOf="@id/vImage">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/vImage" style="@style/Title" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/vImage" style="@style/Title" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/text_color" android:ellipsize="end" android:id="@id/tvDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="3" android:lineSpacingExtra="4.0dip" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_ads">96.0dip</dimen>
+    <dimen name="height_cover_detail_mobile">220.0dip</dimen>
+    <dimen name="height_item_film">195.0dip</dimen>
+    <dimen name="item_subtitle_padding">18.0sp</dimen>
+    <dimen name="subtitle_size">18.0sp</dimen>
+    <dimen name="text_category">18.0sp</dimen>
+    <dimen name="width_ads">728.0dip</dimen>
+    <dimen name="width_item_film">130.0dip</dimen>
+</resources>

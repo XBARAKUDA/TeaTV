@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/vOne" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="120.0dip" android:layout_height="48.0dip">
+        <TextView android:textColor="@color/white" android:id="@id/tvNameTabOne" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:textAllCaps="true" />
+        <View android:id="@id/underLineTabOne" android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/vTwo" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="120.0dip" android:layout_height="48.0dip">
+        <TextView android:textColor="@color/white" android:id="@id/tvNameTabTwo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:textAllCaps="true" />
+        <View android:id="@id/underLineTabTwo" android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

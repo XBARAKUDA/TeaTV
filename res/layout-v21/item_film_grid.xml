@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/vOption" android:layout_width="wrap_content" android:layout_height="@dimen/height_item_film"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card" android:background="@drawable/item_film_focus" android:focusable="true" android:layout_width="@dimen/width_item_film" android:layout_height="@dimen/height_item_film" android:foreground="@drawable/fore_film" android:layout_centerHorizontal="true" app:cardCornerRadius="2.0dip" app:cardElevation="0.0dip">
+        <ImageView android:id="@id/thumbnailGrid" android:layout_width="@dimen/width_item_film" android:layout_height="@dimen/height_item_film" android:layout_centerHorizontal="true" />
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout android:background="@drawable/gradient_item_film" android:layout_width="@dimen/width_item_film" android:layout_height="100.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <com.ctrlplusz.anytextview.AnyTextView android:textSize="12.0sp" android:textColor="@color/white_80" android:id="@id/tvDate" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" app:typeface="@string/typeface_primary" />
+        <com.ctrlplusz.anytextview.AnyTextView android:textSize="13.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/nameGrid" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:lines="2" android:layout_above="@id/tvDate" app:typeface="@string/typeface_primary_bold" />
+    </RelativeLayout>
+</RelativeLayout>

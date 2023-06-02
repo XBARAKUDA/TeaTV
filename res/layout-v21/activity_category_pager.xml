@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background_primary_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/toolbar" android:background="@color/background_primary_light" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <ImageView android:id="@id/imgBack" android:background="@drawable/search_focus" android:padding="10.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_back_white_24dp" android:layout_centerVertical="true" />
+        <com.ctrlplusz.anytextview.AnyTextView android:textColor="@color/white" android:id="@id/edtSearch" android:background="@android:color/transparent" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/category" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/imgBack" android:layout_centerVertical="true" style="@style/Title" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tabs" android:background="@color/background_primary_light" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip" android:elevation="0.0dip" app:backgroundTint="@android:color/transparent" app:tabBackground="@drawable/search_focus" app:tabGravity="center" app:tabIndicatorColor="@color/colorAccent" app:tabIndicatorHeight="2.0dip" app:tabMode="fixed" app:tabPaddingStart="20.0dip" app:tabSelectedTextColor="@color/white" app:tabTextAppearance="@style/TabLayoutTextAppearance" app:tabTextColor="@color/text_color" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/viewpager" android:background="@color/background_primary" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

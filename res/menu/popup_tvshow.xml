@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/discover_tv" android:orderInCategory="101" android:title="Popular" />
+    <item android:id="@id/toprate_tv" android:orderInCategory="107" android:title="Top Rated" />
+    <item android:id="@id/one_the_air_tv" android:orderInCategory="108" android:title="On the air" />
+    <item android:id="@id/airing_today_tv" android:orderInCategory="109" android:title="Airing Today" />
+</menu>

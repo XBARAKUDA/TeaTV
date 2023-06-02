@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teamseries.lotus.widget.NotifyingScrollView android:background="@color/background_primary_drawer" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imgDrawer" android:layout_width="fill_parent" android:layout_height="@dimen/height_image_drawer" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/vDiscover" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_discover" android:tint="@color/white" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvDiscover" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/discover" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/vMovies" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_movie" android:tint="@color/white" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvMovies" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/movies" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/vTvshow" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tvshow" android:tint="@color/white" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvTvshows" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tvshow" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/vHdRelease" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_hdrelease" android:tint="@color/white" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvHdrelease" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hdrelease" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/vCalendar" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_calender" android:tint="@color/white" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvCalendar" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/calendar" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/vLiveTv" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_livetv" android:tint="@color/white" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvStream" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/stream" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/vCategory" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_category" android:tint="@color/white" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvCategory" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/category" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <View android:background="@color/white_50" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white_80" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/vCollection" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_collection" android:tint="@color/white" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvCollection" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/collection" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/vFavorite" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_watchlist" android:tint="@color/white" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvFavorite" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/watchlist" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/vRecent" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_recent" android:tint="@color/white" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvRecent" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recent" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/vDownloadManager" android:background="@drawable/search_focus" android:focusable="true" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip">
+            <ImageView android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_download" android:tint="@color/white" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tvDownloadManager" android:padding="16.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="@string/download_manager" />
+        </LinearLayout>
+        <View android:background="@color/white_50" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white_80" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Other" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/vSetting" android:background="@drawable/search_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting" android:tint="@color/white" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/imgFocusSetting" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tvRemoveAds" android:background="@drawable/search_focus" android:paddingLeft="16.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" android:text="@string/remove_ads" android:layout_centerVertical="true" />
+    </LinearLayout>
+</com.teamseries.lotus.widget.NotifyingScrollView>

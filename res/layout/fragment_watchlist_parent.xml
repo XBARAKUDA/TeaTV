@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/background_primary_light" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tvMovies" android:background="@drawable/search_focus" android:padding="10.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="Movies" android:textAllCaps="false" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tvTvshow" android:background="@drawable/search_focus" android:padding="10.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TV Shows" android:textAllCaps="false" />
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:background="@color/background_primary_light" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

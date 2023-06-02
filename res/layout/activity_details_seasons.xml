@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_primary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <ImageView android:id="@id/imgBack" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_back_white_24dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.ctrlplusz.anytextview.AnyTextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/tvName" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" 123213123" android:layout_toRightOf="@id/imgBack" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rcSeason" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

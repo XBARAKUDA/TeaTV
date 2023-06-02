@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/vCastControl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imgBackgroundCast" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:background="@color/black_30" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true">
+            <ImageView android:id="@id/imgCastPausePlay" android:background="@drawable/play_background" android:padding="8.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pause_white_36dp" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginBottom="70.0dip" android:layout_alignParentBottom="true">
+        <com.ctrlplusz.anytextview.AnyTextView android:textColor="@color/white" android:gravity="center" android:id="@id/total_cast_play" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="--:--" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:typeface="@string/typeface_primary_bold" />
+        <com.ctrlplusz.anytextview.AnyTextView android:textColor="@color/white" android:gravity="center" android:id="@id/current_cast_play" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="--:--" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:typeface="@string/typeface_primary_bold" />
+        <SeekBar android:gravity="center_vertical" android:id="@id/progressCast" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:max="100" android:progressDrawable="@drawable/progress" android:thumb="@drawable/thumb_seekbar" android:layout_toLeftOf="@id/total_cast_play" android:layout_toRightOf="@id/current_cast_play" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/discover_mv" android:orderInCategory="100" android:title="Popular" />
+    <item android:id="@id/toprate_mv" android:orderInCategory="100" android:title="Top Rated" />
+    <item android:id="@id/upcomming_mv" android:orderInCategory="100" android:title="UpComing" />
+    <item android:id="@id/now_playing_mv" android:orderInCategory="100" android:title="Now Playing" />
+</menu>

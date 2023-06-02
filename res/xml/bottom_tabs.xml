@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab activeColor="#ffe68a00" badgeBackgroundColor="#ff0d0d0d" barColorWhenSelected="#ff0d0d0d" icon="@drawable/ic_library_books_yell_24dp" id="@id/tab_new_movies" inActiveColor="#ff808080" title="Discover" />
+    <tab activeColor="#ffe68a00" badgeBackgroundColor="#ff0d0d0d" barColorWhenSelected="#ff0d0d0d" icon="@drawable/ic_movie_white_24dp" id="@id/tab_movies" inActiveColor="#ff808080" title="Movies" />
+    <tab activeColor="#ffe68a00" badgeBackgroundColor="#ff0d0d0d" barColorWhenSelected="#ff0d0d0d" icon="@drawable/ic_live_tv_white_24dp" id="@id/tab_tvshows" inActiveColor="#ff808080" title="TV Shows" />
+    <tab activeColor="#ffe68a00" badgeBackgroundColor="#ff0d0d0d" barColorWhenSelected="#ff0d0d0d" icon="@drawable/ic_blur_circular_white_24dp" id="@id/tab_anime" inActiveColor="#ff808080" title="HD Release" />
+</tabs>
